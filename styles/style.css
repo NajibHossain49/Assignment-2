@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+.navbar, .banner {
+    background: linear-gradient(180.00deg, rgb(119, 119, 119, 0), rgba(119, 119, 119, 0) 100%), rgb(30, 28, 28);
+    color: white;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+.navbar .left, .navbar .right {
+    display: flex;
+}
+.navbar .left a {
+    color: rgb(230, 83, 60);
+    text-decoration: none;
+    padding: 14px 20px;
+    margin-right: 20px; 
+    font-family: 'Inter', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-align: left;
+    
+}
+.navbar .right {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 34px;
+    overflow: hidden;
+    
+}
+.navbar .right a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin-right: 20px; 
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    
+}
+.navbar .right a:first-child {
+    
+    border-radius: 29px;
+    background: rgb(230, 83, 60);
+    
+}
+ /* navbar-Complete*/
+
+
+
+ /* Banner Section*/
+
+ .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    
+}
+.banner .content {
+    max-width: 50%;
+}
+.banner h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.banner .buttons {
+    display: flex;
+}
+.banner .buttons button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+}
+.banner .buttons button:first-child {
+    background-color: rgb(230, 83, 60);
+    color: white;
+}
+.banner .buttons button:last-child {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.banner img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+.styled-text {
+    
+    font-family: 'Miama', sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+                                                
+    
