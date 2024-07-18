@@ -5,8 +5,14 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+    
 }
+body{
+    background: #111; 
+}
+    
 .navbar, .banner {
+    
     background: linear-gradient(180.00deg, rgb(119, 119, 119, 0), rgba(119, 119, 119, 0) 100%), rgb(30, 28, 28);
     color: white;
 }
@@ -113,4 +119,51 @@
     font-size: 2.5em;
 }
                                                 
-    
+/* Banner Section Complete*/
+
+
+/* Change-Your-Habits-Starts */
+
+.change-your-habit-section {
+    text-align: center;
+    padding: 50px;
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17) 0%, rgb(17, 17, 17) 50%, rgba(119, 119, 119, 0) 100%), black; */
+    background: black;
+}
+
+.change-your-habit-section h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.change-your-habit-section p {
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.change-your-habit-section .items {
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+}
+
+.change-your-habit-section .item {
+    text-align: center;
+}
+
+.change-your-habit-section .items img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+}
+
+.change-your-habit-section .items h4, 
+.change-your-habit-section .items h5, 
+.change-your-habit-section .items p {
+    margin: 10px 0 0 0;
+}
+
+/* Change-Your-Habits-Complete */
