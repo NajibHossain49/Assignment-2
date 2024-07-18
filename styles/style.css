@@ -7,7 +7,7 @@
     box-sizing: border-box;
     
 }
-body{
+html,body{
     background: #111; 
 }
     
@@ -167,3 +167,51 @@ body{
 }
 
 /* Change-Your-Habits-Complete */
+
+
+/* Run an Extra Mile Easily */
+
+.run-extra-mile {
+    background: dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    margin: 90px; 
+}
+
+.run-extra-mile .content {
+    max-width: 50%;
+}
+
+.run-extra-mile h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.run-extra-mile p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+}
+
+.run-extra-mile button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px; 
+    background-color: rgb(230, 83, 60);
+    color: white;
+}
+
+.run-extra-mile img {
+    max-width: 50%;
+    border-radius: 10px;
+}
