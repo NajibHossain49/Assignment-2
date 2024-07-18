@@ -172,7 +172,7 @@ html,body{
 /* Run an Extra Mile Easily */
 
 .run-extra-mile {
-    background: dark;
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -180,6 +180,7 @@ html,body{
     background-color: rgb(34, 34, 34);
     border-radius: 10px;
     margin: 90px; 
+    
 }
 
 .run-extra-mile .content {
@@ -214,4 +215,116 @@ html,body{
 .run-extra-mile img {
     max-width: 50%;
     border-radius: 10px;
+}
+
+/* BMI Calculator Section */
+.bmi-calculator-section {
+    padding: 50px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bmi-calculator-section h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+.bmi-calculator .left table th {
+    
+    color: rgb(255, 255, 255); 
+    padding: 10px; 
+}
+
+.bmi-calculator .left table td {
+    color: rgba(255, 255, 255, 0.5); 
+    padding: 10px;
+   
+}
+
+
+.bmi-calculator-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-calculator {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.bmi-calculator .left, .bmi-calculator .right {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.bmi-calculator .left h1, .bmi-calculator .right h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.bmi-calculator .right p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.bmi-calculator .left table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bmi-calculator .left table, .bmi-calculator .left th, .bmi-calculator .left td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.bmi-calculator .left th, .bmi-calculator .left td {
+    padding: 10px;
+    text-align: left;
+}
+.bmi-calculator .right .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bmi-calculator .right .input-group input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white;
+    
+}
+
+.bmi-calculator .right .full-width {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white; 
+    margin-bottom: 20px;
+    
+}
+
+.bmi-calculator .right button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+    background-color: rgb(230, 83, 60);
+    color: white;
 }
