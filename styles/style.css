@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,8 @@
     font-family: 'Inter', sans-serif;
 }
 
-html, body {
+html,
+body {
     background-color: #111;
     color: #fff;
 }
@@ -22,48 +24,55 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    
+
 }
-.navbar .left, .navbar .right {
+
+.navbar .left,
+.navbar .right {
     display: flex;
-    
+
 }
+
 .navbar .left {
-    padding-left: 22px; 
+    padding-left: 22px;
 }
+
 .navbar .left a {
     color: rgb(230, 83, 60);
     text-decoration: none;
     padding: 14px 20px;
-    margin-right: 20px; 
+    margin-right: 20px;
     font-family: 'Inter', sans-serif;
     font-size: 2.25rem;
     font-weight: 800;
     text-align: left;
-    
+
 }
+
 .navbar .right {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 34px;
     overflow: hidden;
-    
+
 }
+
 .navbar .right a {
     color: white;
     text-decoration: none;
     padding: 14px 20px;
-    margin-right: 20px; 
+    margin-right: 20px;
     font-family: 'Inter', sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
     text-align: left;
-    
+
 }
+
 .navbar .right a:first-child {
-    
+
     border-radius: 29px;
     background: rgb(230, 83, 60);
-    
+
 }
 
 /* Hide menu icon for Responsive */
@@ -73,39 +82,45 @@ main {
     cursor: pointer;
 }
 
- /* navbar-Complete*/
+/* navbar-Complete*/
 
 
+/* Banner Section*/
+.styled-text {
+    font-family: 'Miama', sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+}
 
- /* Banner Section*/
-
- .banner {
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
     background: linear-gradient(180.00deg, rgb(17, 17, 17) 0%, rgb(17, 17, 17) 50%, rgba(119, 119, 119, 0) 100%), black;
     color: white;
-    
-    
 }
+
 .banner .content {
     max-width: 50%;
 }
+
 .banner h1 {
     font-size: 68px;
     font-weight: 800;
     margin-bottom: 20px;
-    
 }
+
 .banner p {
     font-size: 18px;
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.5);
 }
+
 .banner .buttons {
     display: flex;
 }
+
 .banner .buttons button {
     padding: 15px 30px;
     font-size: 18px;
@@ -115,26 +130,94 @@ main {
     border: none;
     border-radius: 32px;
 }
+
 .banner .buttons button:first-child {
     background-color: rgb(230, 83, 60);
     color: white;
 }
+
 .banner .buttons button:last-child {
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-.banner img {
+
+.banner .image-container {
+    position: relative;
     max-width: 50%;
+    padding-right: 200px;
+}
+
+.banner img {
+    width: 100%;
     border-radius: 10px;
 }
-.styled-text {
-    
-    font-family: 'Miama', sans-serif;
-    font-weight: 300;
-    font-size: 2.5em;
+
+.overlay-buttons {
+    position: relative;
 }
-                                                
+
+
+/* Specific positioning for button-1 */
+.button-1 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding-left: 30px;
+    position: absolute;
+    width: 206px;
+    height: 96px;
+    bottom: 67px;
+    left: -105px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+.button-1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 33px;
+    height: 33px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+
+}
+
+/* Specific positioning for button-2 */
+.button-2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 193px;
+    height: 98px;
+    top: 170px;
+    right: -100px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+.span-1,
+.span-2 {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+
 /* Banner Section Complete*/
 
 
@@ -163,7 +246,7 @@ main {
 .change-your-habit-section .items {
     display: flex;
     justify-content: center;
-    gap: 25px; 
+    gap: 25px;
 }
 
 .change-your-habit-section .item {
@@ -171,13 +254,13 @@ main {
 }
 
 .change-your-habit-section .items img {
-    width: 150px; 
-    height: 150px; 
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
-.change-your-habit-section .items h4, 
-.change-your-habit-section .items h5, 
+.change-your-habit-section .items h4,
+.change-your-habit-section .items h5,
 .change-your-habit-section .items p {
     margin: 10px 0 0 0;
 }
@@ -195,9 +278,9 @@ main {
     padding: 50px;
     background-color: rgb(34, 34, 34);
     border-radius: 10px;
-    margin: 90px; 
-    
-    
+    margin: 90px;
+
+
 }
 
 .run-extra-mile .content {
@@ -224,7 +307,7 @@ main {
     font-weight: 600;
     cursor: pointer;
     border: none;
-    border-radius: 20px; 
+    border-radius: 20px;
     background-color: rgb(230, 83, 60);
     color: white;
 }
@@ -250,16 +333,17 @@ main {
     margin-bottom: 20px;
     color: white;
 }
+
 .bmi-calculator .left table th {
-    
-    color: rgb(255, 255, 255); 
-    padding: 10px; 
+
+    color: rgb(255, 255, 255);
+    padding: 10px;
 }
 
 .bmi-calculator .left table td {
-    color: rgba(255, 255, 255, 0.5); 
+    color: rgba(255, 255, 255, 0.5);
     padding: 10px;
-   
+
 }
 
 
@@ -277,12 +361,14 @@ main {
     max-width: 1200px;
 }
 
-.bmi-calculator .left, .bmi-calculator .right {
+.bmi-calculator .left,
+.bmi-calculator .right {
     flex: 1;
     margin: 0 20px;
 }
 
-.bmi-calculator .left h1, .bmi-calculator .right h1 {
+.bmi-calculator .left h1,
+.bmi-calculator .right h1 {
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 20px;
@@ -298,15 +384,19 @@ main {
     border-collapse: collapse;
 }
 
-.bmi-calculator .left table, .bmi-calculator .left th, .bmi-calculator .left td {
+.bmi-calculator .left table,
+.bmi-calculator .left th,
+.bmi-calculator .left td {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    
+
 }
 
-.bmi-calculator .left th, .bmi-calculator .left td {
+.bmi-calculator .left th,
+.bmi-calculator .left td {
     padding: 10px;
     text-align: left;
 }
+
 .bmi-calculator .right .input-group {
     display: flex;
     flex-wrap: wrap;
@@ -320,10 +410,16 @@ main {
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: #000;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
     border: none;
-    outline: none; 
+    outline: none;
+}
+
+/* Style the options within the select */
+.bmi-calculator .right .input-group select option {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .bmi-calculator .right .full-width {
@@ -331,11 +427,19 @@ main {
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 20px;
-    
+    border: none;
+    outline: none;
 }
+
+/* Style the select options */
+.bmi-calculator .right .full-width option {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 .bmi-calculator .right button {
     padding: 10px 20px;
@@ -353,6 +457,7 @@ main {
     background-color: black;
     padding: 50px 0;
 }
+
 .meet-our-team-section .section-title h1 {
     text-align: center;
     color: white;
@@ -386,8 +491,8 @@ main {
 }
 
 .meet-our-team-section .item {
-    width: 100%; 
-    padding-bottom: 100%; 
+    width: 100%;
+    padding-bottom: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -407,7 +512,7 @@ main {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    
+
 }
 
 .meet-our-team-section .item .overlay h3 {
@@ -420,14 +525,15 @@ main {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
 }
+
 /* Footer Section */
 footer {
     color: white;
     padding: 50px 0;
     margin-top: 15px;
-    background-color: #111; 
-    color: white; 
-    
+    background-color: #111;
+    color: white;
+
 }
 
 .footer {
@@ -440,7 +546,8 @@ footer {
     max-width: 300px;
 }
 
-.footer-column h1, .footer-column h3 {
+.footer-column h1,
+.footer-column h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -534,197 +641,201 @@ footer {
         border-radius: 10px;
     }
 
-/* Change-Your-Habits-Starts */
+    /* Change-Your-Habits-Starts */
 
-.change-your-habit-section {
-    padding: 30px;
-}
+    .change-your-habit-section {
+        padding: 30px;
+    }
 
-.change-your-habit-section h1 {
-    font-size: 36px;
-}
+    .change-your-habit-section h1 {
+        font-size: 36px;
+    }
 
-.change-your-habit-section .items {
-    flex-direction: column;
-    align-items: center;
-}
+    .change-your-habit-section .items {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.change-your-habit-section .items img {
-    width: 100px;
-    height: 100px;
-}
+    .change-your-habit-section .items img {
+        width: 100px;
+        height: 100px;
+    }
 
-.change-your-habit-section .item {
-    margin-bottom: 20px;
-}
+    .change-your-habit-section .item {
+        margin-bottom: 20px;
+    }
 
-/* Run an Extra Mile Easily */
-.run-extra-mile {
-    flex-direction: column;
-    padding: 30px;
-    margin: 30px;
-}
+    /* Run an Extra Mile Easily */
+    .run-extra-mile {
+        flex-direction: column;
+        padding: 30px;
+        margin: 30px;
+    }
 
-.run-extra-mile .content {
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
+    .run-extra-mile .content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-.run-extra-mile h1 {
-    font-size: 36px;
-}
+    .run-extra-mile h1 {
+        font-size: 36px;
+    }
 
-.run-extra-mile p {
-    font-size: 16px;
-}
+    .run-extra-mile p {
+        font-size: 16px;
+    }
 
-.run-extra-mile img {
-    max-width: 100%;
-}
+    .run-extra-mile img {
+        max-width: 100%;
+    }
 
- /* BMI Calculator Section */
+    /* BMI Calculator Section */
 
- .bmi-calculator-section {
-    padding: 20px;
-}
+    .bmi-calculator-section {
+        padding: 20px;
+    }
 
-.bmi-calculator-section h1 {
-    font-size: 36px;
-}
+    .bmi-calculator-section h1 {
+        font-size: 36px;
+    }
 
-.bmi-calculator-section p {
-    font-size: 16px;
-    text-align: center;
-}
+    .bmi-calculator-section p {
+        font-size: 16px;
+        text-align: center;
+    }
 
-.bmi-calculator {
-    flex-direction: column;
-    align-items: center;
-}
+    .bmi-calculator {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.bmi-calculator .left, .bmi-calculator .right {
-    margin: 10px 0;
-}
+    .bmi-calculator .left,
+    .bmi-calculator .right {
+        margin: 10px 0;
+    }
 
-.bmi-calculator .left h1, .bmi-calculator .right h1 {
-    font-size: 28px;
-}
+    .bmi-calculator .left h1,
+    .bmi-calculator .right h1 {
+        font-size: 28px;
+    }
 
-.bmi-calculator .right p {
-    font-size: 16px;
-    text-align: center;
-}
+    .bmi-calculator .right p {
+        font-size: 16px;
+        text-align: center;
+    }
 
-.bmi-calculator .left table, .bmi-calculator .left th, .bmi-calculator .left td {
-    font-size: 14px;
-}
+    .bmi-calculator .left table,
+    .bmi-calculator .left th,
+    .bmi-calculator .left td {
+        font-size: 14px;
+    }
 
-.bmi-calculator .right .input-group {
-    flex-direction: column;
-    gap: 10px;
-}
+    .bmi-calculator .right .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-.bmi-calculator .right .input-group input,
-.bmi-calculator .right .input-group select,
-.bmi-calculator .right .full-width {
-    width: 100%;
-    font-size: 14px;
-}
+    .bmi-calculator .right .input-group input,
+    .bmi-calculator .right .input-group select,
+    .bmi-calculator .right .full-width {
+        width: 100%;
+        font-size: 14px;
+    }
 
-.bmi-calculator .right button {
-    width: 100%;
-    font-size: 16px;
-}
+    .bmi-calculator .right button {
+        width: 100%;
+        font-size: 16px;
+    }
 
- /* Meet Our Team Section */
+    /* Meet Our Team Section */
 
- .meet-our-team-section {
-    padding: 20px 0;
-}
+    .meet-our-team-section {
+        padding: 20px 0;
+    }
 
-.meet-our-team-section .section-title h1 {
-    font-size: 36px;
-    padding: 10px;
-}
+    .meet-our-team-section .section-title h1 {
+        font-size: 36px;
+        padding: 10px;
+    }
 
-.meet-our-team-section .section-title p {
-    font-size: 16px;
-    padding: 10px;
-}
+    .meet-our-team-section .section-title p {
+        font-size: 16px;
+        padding: 10px;
+    }
 
-.meet-our-team-section .container {
-    padding: 10px;
-}
+    .meet-our-team-section .container {
+        padding: 10px;
+    }
 
-.meet-our-team-section .grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
+    .meet-our-team-section .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 
-.meet-our-team-section .item {
-    padding-bottom: 100%;
-}
+    .meet-our-team-section .item {
+        padding-bottom: 100%;
+    }
 
-.meet-our-team-section .item .overlay {
-    bottom: 5px;
-    left: 5px;
-    padding: 5px;
-}
+    .meet-our-team-section .item .overlay {
+        bottom: 5px;
+        left: 5px;
+        padding: 5px;
+    }
 
-.meet-our-team-section .item .overlay h3 {
-    font-size: 16px;
-}
+    .meet-our-team-section .item .overlay h3 {
+        font-size: 16px;
+    }
 
-.meet-our-team-section .item .overlay p {
-    font-size: 12px;
-}
+    .meet-our-team-section .item .overlay p {
+        font-size: 12px;
+    }
 
-/* Footer */
+    /* Footer */
 
-footer {
-    padding: 20px 0;
-}
+    footer {
+        padding: 20px 0;
+    }
 
-.footer {
-    flex-direction: column;
-    align-items: center;
-}
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.footer-column {
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
+    .footer-column {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-.footer-column h1 {
-    font-size: 36px;
-}
+    .footer-column h1 {
+        font-size: 36px;
+    }
 
-.footer-column h3 {
-    font-size: 20px;
-}
+    .footer-column h3 {
+        font-size: 20px;
+    }
 
-.footer-column p,
-.footer-column a {
-    font-size: 16px;
-}
+    .footer-column p,
+    .footer-column a {
+        font-size: 16px;
+    }
 
-.footer-column .footer-description {
-    font-size: 14px;
-    width: 100%;
-}
+    .footer-column .footer-description {
+        font-size: 14px;
+        width: 100%;
+    }
 
-.footer-hr {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10px;
-}
+    .footer-hr {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
 
-.footer-rights {
-    font-size: 12px;
-    margin-top: 10px;
-}
+    .footer-rights {
+        font-size: 12px;
+        margin-top: 10px;
+    }
 
 
 
