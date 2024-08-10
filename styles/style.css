@@ -984,59 +984,97 @@ footer {
     /* BMI Calculator Section */
 
     .bmi-calculator-section {
-        padding: 20px;
+        padding: 1.25rem;
+        text-align: left;
+
     }
+
 
     .bmi-calculator-section h1 {
         font-size: 2.25rem;
+        text-align: left;
+        margin: 0;
+
     }
+
+
 
     .bmi-calculator-section p {
-        font-size: 16px;
-        text-align: center;
+        font-size: 1rem;
+        text-align: left;
+        padding-top: 10px;
     }
 
+
+
     .bmi-calculator {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .bmi-calculator .left,
     .bmi-calculator .right {
+        width: 100%;
         margin: 10px 0;
     }
 
     .bmi-calculator .left h1,
     .bmi-calculator .right h1 {
-        font-size: 28px;
+        font-size: 0.875rem;
+        text-align: left;
+
     }
 
     .bmi-calculator .right p {
-        font-size: 16px;
-        text-align: center;
+        font-size: 1rem;
+        text-align: left;
     }
+
+
 
     .bmi-calculator .left table,
     .bmi-calculator .left th,
     .bmi-calculator .left td {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
+    /* Input group styles */
     .bmi-calculator .right .input-group {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
     .bmi-calculator .right .input-group input,
-    .bmi-calculator .right .input-group select,
-    .bmi-calculator .right .full-width {
-        width: 100%;
-        font-size: 14px;
+    .bmi-calculator .right .input-group select {
+        flex: 1 1 calc(50% - 5px);
+        width: calc(50% - 5px);
+        font-size: 0.875rem;
+        height: 48px;
+        box-sizing: border-box;
     }
 
-    .bmi-calculator .right button {
+    /* Full-width input */
+    .bmi-calculator .right .full-width {
         width: 100%;
-        font-size: 16px;
+        font-size: 0.875rem;
+        height: 48px;
+        box-sizing: border-box;
+    }
+
+    /* Calculate button style */
+    .bmi-calculator .right button {
+        flex: 1 1 calc(50% - 5px);
+        width: calc(50% - 5px);
+        font-size: 1rem;
+        height: 48px;
+        margin-top: 10px;
+        background: rgb(230, 83, 60);
+        color: white;
+        border: none;
+        border-radius: 42px;
+        cursor: pointer;
     }
 
     /* BMI Calculator Section Complete */
